@@ -191,6 +191,137 @@ if (sayi === null) {
   sayi = 0;
 }
 
+    <!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silivri Odun Satışı | Meşe - Gürgen - Fırınlık Odun</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background: #1b5e20;
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #2e7d32;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #1ebe5d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2e7d32;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Silivri Odun Satışı</h1>
+  <p>Meşe - Gürgen - Fırınlık Odun | Kapıya Teslim</p>
+</header>
+
+<nav>
+  <a href="#meşe">Meşe Odun</a>
+  <a href="#bilgi">Bilgi</a>
+  <a href="#siparis">Sipariş</a>
+</nav>
+
+<div class="container">
+
+  <!-- MEŞE -->
+  <div class="card" id="meşe">
+    <h2>🔥 Meşe Odun</h2>
+    <p>
+      Yüksek ısı veren, kurutulmuş meşe odun satışımız vardır.
+      Soba ve fırın kullanımına uygundur.
+    </p>
+  </div>
+
+  <!-- BİLGİ -->
+  <div class="card" id="bilgi">
+    <h2>📌 Bilgi</h2>
+    <p>
+      Silivri ve çevresine hızlı odun teslimatı yapıyoruz.
+      Meşe, gürgen ve fırınlık odun seçenekleri mevcuttur.
+    </p>
+  </div>
+
+  <!-- SİPARİŞ -->
+  <div class="card" id="siparis">
+    <h2>📞 Sipariş Ver</h2>
+    <p>WhatsApp üzerinden hemen sipariş verebilirsiniz.</p>
+
+    <a class="btn" href="https://wa.me/905416351406" target="_blank">
+      WhatsApp Sipariş
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Silivri Odun Satışı
+</footer>
+
+</body>
+</html>
+
 sayi = Number(sayi) + 1;
 
 localStorage.setItem("ziyaretciSayisi", sayi);
