@@ -180,10 +180,23 @@ WhatsApp Sipariş Ver
     © 2026 Engin Odun Satışı - Tüm Hakları Saklıdır
 </footer>
 
-<div id="sfc4x4r9feqmew1fg1wdt5hgju5yz9rq8z7"></div>
-<script type="text/javascript" src="https://counter11.optistats.ovh/private/counter.js?c=4x4r9feqmew1fg1wdt5hgju5yz9rq8z7&down=async" async></script>
-<noscript><a href="https://www.freecounterstat.com" title="website hit counter"><img src="https://counter11.optistats.ovh/private/freecounterstat.php?c=4x4r9feqmew1fg1wdt5hgju5yz9rq8z7" border="0" title="website hit counter" alt="website hit counter"></a></noscript>
+<h2 style="text-align:center;">
+  Ziyaretçi Sayısı: <span id="sayac">0</span>
+</h2>
 
+<script>
+let sayi = localStorage.getItem("ziyaretciSayisi");
+
+if (sayi === null) {
+  sayi = 0;
+}
+
+sayi = Number(sayi) + 1;
+
+localStorage.setItem("ziyaretciSayisi", sayi);
+
+document.getElementById("sayac").innerText = sayi;
+</script>
 
 </body>
 </html>
