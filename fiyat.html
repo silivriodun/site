@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fiyat Listesi | Silivri Oduncu</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f5f5f5;
+}
+
+header{
+  background:#5a3e1b;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+nav{
+  background:#3d2a12;
+  text-align:center;
+  padding:12px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+  font-weight:bold;
+}
+
+h2{
+  text-align:center;
+  margin:30px 0 10px;
+}
+
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  width:260px;
+  background:white;
+  border-radius:15px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  transition:0.2s;
+  border:2px solid transparent;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border:2px solid #25D366;
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.price{
+  font-size:28px;
+  font-weight:bold;
+  color:#5a3e1b;
+  margin-top:10px;
+}
+
+/* SİPARİŞ BUTONU */
+.order-btn{
+  display:block;
+  margin-top:15px;
+  background:#25D366;
+  color:white;
+  padding:10px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.highlight{
+  background:#f0fff4;
+  border:2px solid #25D366;
+}
+
+footer{
+  background:#3d2a12;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🔥 Fiyat Listesi</h1>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Ana Sayfa</a>
+  <a href="fiyat.html">🔥 Fiyatlar</a>
+</nav>
+
+<h2>🔥 Güncel Fiyatlar</h2>
+
+<div class="container">
+
+  <div class="card">
+    <h3>🔥 Sobalık Meşe</h3>
+    <div class="price">8.500 TL</div>
+    <a class="order-btn" href="https://wa.me/905416351406?text=Merhaba%20Sobal%C4%B1k%20Me%C5%9Fe%20odun%20sipari%C5%9F%20vermek%20istiyorum">
+      🔥 Sipariş Ver
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>🔥 Şöminelik Meşe</h3>
+    <div class="price">8.500 TL</div>
+    <a class="order-btn" href="https://wa.me/905416351406?text=Merhaba%20%C5%9E%C3%B6minelik%20Me%C5%9Fe%20odun%20sipari%C5%9F%20vermek%20istiyorum">
+      🔥 Sipariş Ver
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>🔥 Fırınlık Meşe & Gürgen</h3>
+    <div class="price">8.500 TL</div>
+    <a class="order-btn" href="https://wa.me/905416351406?text=Merhaba%20F%C4%B1r%C4%B1nl%C4%B1k%20Me%C5%9Fe%20ve%20G%C3%BCrgen%20sipari%C5%9F%20vermek%20istiyorum">
+      🔥 Sipariş Ver
+    </a>
+  </div>
+
+  <div class="card highlight">
+    <h3>🔥 Tutuşturmalık Kuru Parça</h3>
+    <div class="price">500 TL</div>
+    <a class="order-btn" href="https://wa.me/905416351406?text=Merhaba%20Tutu%C5%9Fturmal%C4%B1k%20kuru%20par%C3%A7a%20sipari%C5%9F%20vermek%20istiyorum">
+      🔥 Sipariş Ver
+    </a>
+  </div>
+
+</div>
+
+<footer>
+© 2026 Silivri Oduncu
+</footer>
+
+</body>
+</html>
