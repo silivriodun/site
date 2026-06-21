@@ -9,6 +9,7 @@
 <meta name="description" content="Silivri oduncu. Meşe, gürgen, sobalık, şöminelik ve fırınlık odun. Hızlı teslimat ve uygun fiyat.">
 
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -20,6 +21,7 @@ body{
   background:#f5f5f5;
 }
 
+/* HEADER */
 header{
   background:#5a3e1b;
   color:white;
@@ -27,19 +29,53 @@ header{
   padding:30px;
 }
 
-nav{
+/* MENÜ (CARD STYLE) */
+.menu{
   background:#3d2a12;
-  text-align:center;
   padding:15px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
-nav a{
+.menu-card{
+  background:#5a3e1b;
   color:white;
   text-decoration:none;
-  margin:10px;
+  padding:10px 14px;
+  border-radius:10px;
+  font-size:14px;
   font-weight:bold;
+
+  box-shadow:0 3px 8px rgba(0,0,0,0.25);
+  transition:0.2s;
 }
 
+.menu-card:hover{
+  background:#25D366;
+  transform:translateY(-2px);
+}
+
+/* STOK BUTON */
+.stock-btn{
+  text-align:center;
+  margin:20px 0;
+}
+
+.stock-btn a{
+  display:inline-block;
+  padding:18px 30px;
+  background:#25D366;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* HERO */
 .hero{
   background:url('https://avatars.mds.yandex.net/i?id=171da3d0e7eac1a63ec6204d6fa8c177e152ea98-5473533-images-thumbs&n=13') center/cover;
   height:350px;
@@ -56,6 +92,7 @@ nav a{
   border-radius:10px;
 }
 
+/* ÜRÜNLER */
 .container{
   width:90%;
   margin:auto;
@@ -101,6 +138,7 @@ nav a{
   font-weight:bold;
 }
 
+/* BİLGİ */
 .info-box{
   background:#fff7e6;
   border-left:6px solid #5a3e1b;
@@ -109,6 +147,7 @@ nav a{
   border-radius:10px;
 }
 
+/* İLETİŞİM */
 .contact{
   margin-top:30px;
   background:white;
@@ -116,6 +155,7 @@ nav a{
   border-radius:10px;
 }
 
+/* FOOTER */
 footer{
   background:#3d2a12;
   color:white;
@@ -124,25 +164,7 @@ footer{
   margin-top:30px;
 }
 
-/* 🟢 BÜYÜK STOK BUTONU */
-.stock-btn{
-  text-align:center;
-  margin:20px 0;
-}
-
-.stock-btn a{
-  display:inline-block;
-  padding:18px 30px;
-  background:#25D366;
-  color:white;
-  font-size:20px;
-  font-weight:bold;
-  text-decoration:none;
-  border-radius:12px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.25);
-}
 </style>
-
 </head>
 
 <body>
@@ -152,22 +174,25 @@ footer{
   <p>Meşe, Gürgen, Sobalık, Şöminelik ve Fırınlık Odun</p>
 </header>
 
-<nav>
-  <a href="#urunler">Ürünler</a>
-  <a href="#iletisim">İletişim</a>
-  <a href="hizmet.html">Hizmet Verilen Yerler</a>
-  <a href="stok.html">📦 Stok Sayfası</a>
+<!-- MENÜ -->
+<nav class="menu">
+  <a href="#urunler" class="menu-card">📦 Ürünler</a>
+  <a href="#iletisim" class="menu-card">📞 İletişim</a>
+  <a href="hizmet.html" class="menu-card">📍 Hizmet Yerleri</a>
+  <a href="stok.html" class="menu-card">🔥 Stok</a>
 </nav>
 
-<!-- 🟢 BÜYÜK STOK BUTONU -->
+<!-- STOK BUTON -->
 <div class="stock-btn">
   <a href="stok.html">📦 GÜNCEL STOK DURUMU</a>
 </div>
 
+<!-- HERO -->
 <div class="hero">
   <h1>Kışa Hazırlanın – Uygun Fiyatlı Odun</h1>
 </div>
 
+<!-- ÜRÜNLER -->
 <div class="container">
 
 <h2 id="urunler" style="text-align:center;margin-bottom:20px;">Ürünler</h2>
@@ -202,16 +227,6 @@ footer{
 <a class="btn" href="tel:+905416351406">Ara</a>
 </div>
 
-</div>
-
-<!-- BİLGİ -->
-<div class="info-box">
-<h2>📢 Önemli Bilgi</h2>
-<p>
-Tüm odunlarımız doğal kurutulmuş ve yüksek ısı verimlidir.  
-Silivri ve çevresine aynı gün teslimat yapılır.  
-Toplu alımlarda özel fiyat uygulanır.
-</p>
 </div>
 
 <!-- İLETİŞİM -->
